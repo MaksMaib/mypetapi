@@ -82,4 +82,4 @@ To work with docker-compose, we need to have a file with the extension **.yml** 
 * **runtime: nvidia** - for cuda usage;
 * **build:** - the command needed to build a custom image in docker compose. You must have a Dockerfile;
 * **command:** - same as **CMD** in Dockerfile;
-* **ports:** - same as ** -p ** in Dockerfile;
+* **ports:** - same as **-p** in Dockerfile;
