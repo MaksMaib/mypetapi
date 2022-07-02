@@ -66,20 +66,20 @@ To run a container needs:
 ```bash
  sudo docker run --runtime=nvidia -p 8000:8000 myapi
 ```
-_--runtime=nvidia_ - indicates the need for the image to run the cuda components.
-_-p 8000:8000_ - specifies the connection between the application api host and the container host.
-_myapi_ - The last parameter is the name or id of the image. In my case it is _myapi_.
+* _--runtime=nvidia_ - indicates the need for the image to run the cuda components.
+* _-p 8000:8000_ - specifies the connection between the application api host and the container host.
+* _myapi_ - The last parameter is the name or id of the image. In my case it is _myapi_.
 
 ### Docker-compose (declarative approach) 
 Docker сompose allows to build, launch and manage a set of containers at once.
 To work with docker-compose, we need to have a file with the extension **.yml** or **.yaml**, which, like the Docker file, contains a set of commands.
 
 #### Most used commands in docker-compose:
-**version: "#"** - set version of docker-compose;
-**services:** - the services described the parameters and components of our container;
-**api** - the name given to my service;
-**container_name:** - allows you to specify a name for the output container;
-**runtime: nvidia** - for cuda usage;
-**build:** - the command needed to build a custom image in docker compose. You must have a Dockerfile;
-**command:** - same as **CMD** in Dockerfile;
-**ports:** - same as ** -p ** in Dockerfile;
+* **version: "#"** - set version of docker-compose;
+* **services:** - the services described the parameters and components of our container;
+* **api** - the name given to my service;
+* **container_name:** - allows you to specify a name for the output container;
+* **runtime: nvidia** - for cuda usage;
+* **build:** - the command needed to build a custom image in docker compose. You must have a Dockerfile;
+* **command:** - same as **CMD** in Dockerfile;
+* **ports:** - same as ** -p ** in Dockerfile;
