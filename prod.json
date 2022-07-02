@@ -1,0 +1,17 @@
+{
+    "1": {
+        "name": "milk",
+        "price": 4.4,
+        "brand": "happy cow"
+    },
+    "2": {
+        "name": "eggs",
+        "price": 25.3,
+        "brand": "some eggs"
+    },
+    "3": {
+        "name": "pasta",
+        "price": 7.77,
+        "brand": "diva"
+    }
+}

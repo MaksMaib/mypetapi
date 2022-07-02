@@ -1,0 +1,12 @@
+version: "2.4"
+
+services:
+    api:
+        runtime: nvidia
+        container_name: api-cuda
+        build:
+            context: .
+            dockerfile: Dockerfile
+        command: bash -c "python main.py"
+        ports:
+            - 8000:8000
