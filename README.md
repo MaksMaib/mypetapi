@@ -58,9 +58,9 @@ To build an image needs:
 ```bash
 sudo docker build -f Dockerfile-raw -t myapi .
 ```
-_-f Dockerfile-raw_ - The _-f_ parameter indicates that the dockerfile has a non-default name and is named _Dockerfile-raw_.
-_-t myapi_ - The _-t_ allows  to specify own name _myapi_. By default docker sets random names.
-_._ - The last parameter sets the directory in which to build the image. _Dot_ mean that is current directory.
+_-f Dockerfile-raw_ - The _-f_ parameter indicates that the dockerfile has a non-default name and is named _Dockerfile-raw_. <br /> 
+_-t myapi_ - The _-t_ allows  to specify own name _myapi_. By default docker sets random names. <br /> 
+_._ - The last parameter sets the directory in which to build the image. _Dot_ mean that is current directory. <br /> 
 
 To run a container needs:
 ```bash
